@@ -17,7 +17,7 @@
   <input id="accept" name="accept" type="checkbox" value="y"/>Elfogadok mindent xd <br>    
     <input id="submitbtn" class="send" type="submit" value="Send" type="submit" disabled="disabled" >
 <script>
-function Funch {
+function accept {
 $('#accept').click(function() {
 	if ($('#submitbtn').is(':disabled')) {
     	$('#submitbtn').removeAttr('disabled');
@@ -25,6 +25,15 @@ $('#accept').click(function() {
     	$('#submitbtn').attr('disabled', 'disabled');
     }
 }});
+</script>
+	<script>
+$('#accept').click(function() {
+	if ($('#submitbtn').is(':disabled')) {
+    	$('#submitbtn').removeAttr('disabled');
+    } else {
+    	$('#submitbtn').attr('disabled', 'disabled');
+    }
+});
 </script>
 </form>
 
