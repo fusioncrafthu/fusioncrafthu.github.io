@@ -14,7 +14,20 @@
 <form action="https://formspree.io/tutiuzleti@gmail.com">
     <input type="text" name="name" placeholder="Neved">
     <input type="email" name="_replyto" placeholder="Emailed">
-    <input type="submit" value="Send">
+  <input id="accept" name="accept" type="checkbox" value="y"/>Elfogadok mindent xd <br>  
+<input     value="Submit" />
+  
+    <input id="submitbtn" class="send" type="submit" value="Send" type="submit" disabled="disabled" name="Submit">
+<script>
+function Funch {
+$('#accept').click(function() {
+	if ($('#submitbtn').is(':disabled')) {
+    	$('#submitbtn').removeAttr('disabled');
+    } else {
+    	$('#submitbtn').attr('disabled', 'disabled');
+    }
+});
+</script>
 </form>
 
 
