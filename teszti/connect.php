@@ -1,4 +1,14 @@
 <?php
+$domain = "localhost/url/";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname='shorten-url';
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?><?php
   include "php/connect.php";
   $new_url = "";
   if(isset($_GET)){
