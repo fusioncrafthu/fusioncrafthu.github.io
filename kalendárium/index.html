@@ -2,7 +2,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styleteszt/style.css">
+  <link rel="stylesheet" href="https://fusioncrafthu.github.io/styleteszt/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
 
 
@@ -89,10 +89,11 @@ cursor: pointer;
 <button type="button" class="btn btn-success" id="napi" >Új év 2022 :D YEEEY XD</button>
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">		<a class="close" href="#">&times;</a>
+  <div id="myModal" class="modal">
 
-      <span class="close">×</span>
+  <div class="modal-content">
+    <div class="modal-header">		
+      <span class="close" id="close">×</span>
       <h2>Fusion Craft Kalendárium - 2022</h2>
     </div>
     <div class="modal-body">
@@ -133,7 +134,7 @@ a:active {
   </div>
 
 </div>
-
+</div>
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
